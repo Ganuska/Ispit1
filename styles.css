@@ -187,3 +187,19 @@ padding-right: 10px;}
 #oNama,#Nase,#Kontakt{
     text-transform: uppercase;
 }
+
+
+form > input,textarea {
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px #333;
+}

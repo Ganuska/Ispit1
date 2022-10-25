@@ -5,21 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>turisticka agencija Avanturist</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="header">
-      <h1>Turisticka agencija "Avanturist"</h1>
-      <nav>
+      <nav class="nav_bar">
+        <img src="./assets/Avanturist_logo.svg" alt="avanturist logo" />
         <ul>
           <li><a href="#oNama"> O nama</a></li>
           <li><a href="#Nase"> Nase djelatnosti</a></li>
           <li><a href="#Kontakt"> Kontakt</a></li>
         </ul>
+        <div id="hambIco" onclick="toggleHamb()" class="hamburger_container">
+          <div id="line1" class="line1"></div>
+          <div id="line2" class="line2"></div>
+          <div id="line3" class="line3"></div>
+        </div>
       </nav>
+      <section id="dropDown" class="hide_hamb_menu">
+        <ul class="hamburger">
+          <li>
+            <a id="link1" onclick="toggleHamb()" href="#oNama"> O nama</a>
+          </li>
+          <li>
+            <a id="link2" onclick="toggleHamb()" href="#Nase">
+              Nase djelatnosti</a
+            >
+          </li>
+          <li>
+            <a id="link3" onclick="toggleHamb()" href="#Kontakt"> Kontakt</a>
+          </li>
+        </ul>
+      </section>
     </header>
-    <hr />
     <main>
-      <h1>Turisticka agencija "Avanturist"</h1>
+      <section class="hero">
+        <h1 class="hero_title">
+          Turisticka agencija <br />
+          AVANTURIST
+        </h1>
+      </section>
       <br />
       <section>
         <h2 id="oNama">O nama</h2>
@@ -40,7 +65,7 @@
           provident.
         </p>
         <br />
-        <img src="./assets/team.jpg" alt="team" />
+        <img class="imgs" src="./assets/team.jpg" alt="team" />
         <br />
       </section>
       <section>
@@ -60,7 +85,7 @@
           omnis asperiores quia voluptate blanditiis eaque. Quaerat, eos fuga.
         </p>
         <br />
-        <img src="./assets/adventure.jpg" alt="adventure" />
+        <img class="imgs" src="./assets/adventure.jpg" alt="adventure" />
         <br />
       </section>
       <hr />
@@ -105,7 +130,6 @@
         </form>
       </section>
     </main>
-    <hr />
     <footer>
       <i>Avanturist © 2022.</i>
       <br />
@@ -113,5 +137,6 @@
         ><img src="./assets/mail.png" alt="MailLogo" />
       </a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
